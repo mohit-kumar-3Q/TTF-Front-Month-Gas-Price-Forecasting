@@ -30,6 +30,16 @@ This project builds a machine learning model to predict monthly **TTF gas prices
 
 ---
 
+## 🎯 Feature Engineering Strategy
+- To avoid overfitting due to the small dataset size (~38 observations), we deliberately limited the number of engineered features while ensuring they were strategically meaningful.
+
+- We included only one country’s import volume (Germany), as Germany is a major gas consumer and a key destination for LNG and pipeline imports.
+
+- For temperature-based features, we selected Spain due to initial correlation strength. However, we acknowledge that countries like France and the Netherlands are more influential LNG importers (based on 2024 data from IEEFA).
+
+- Adding features for all countries (imports or temperatures) would have introduced multicollinearity and reduced model generalizability. Instead, we selected a small subset that captured regional demand/supply dynamics effectively.
+This reflects a pragmatic trade-off between model robustness and physical market relevance.
+
 ## 📈 Model Highlights
 
 - Applied lag features, rolling averages, YoY changes, and spread variables.
@@ -58,7 +68,7 @@ This project builds a machine learning model to predict monthly **TTF gas prices
 ## 🔗 Notebook
 
 View full notebook on **nbviewer**:  
-[Open Notebook](https://nbviewer.org/url/raw.githubusercontent.com/mohit-kumar-3Q/LNG-TTF-Spot-Price-Forecasting/refs/heads/main/lng-price-forecasting-ttf-focus.ipynb)
+[Open Notebook](https://ipynb.js.org/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmohit-kumar-3Q%2FLNG-TTF-Spot-Price-Forecasting%2Frefs%2Fheads%2Fmain%2Flng-price-forecasting-ttf-focus.ipynb)
 
 ---
 
