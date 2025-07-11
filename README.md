@@ -1,4 +1,4 @@
-# TTF Gas Price Forecasting (2020–2023)
+# TTF Gas Price Forecasting (2020–2024)
 
 This project builds a machine learning model to predict monthly **TTF gas prices** using LNG trade flows, temperatures in key European markets, alternative benchmark prices (Henry Hub, JKM, Brent), and EU country-level gas imports. It aims to demonstrate the application of real-world LNG pricing dynamics for analytics and forecasting.
 
