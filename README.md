@@ -66,18 +66,18 @@ This reflects a pragmatic trade-off between model robustness and physical market
 ---
 
 ## 📌 Final Verdict
-Despite strong test-set performance (R² ~0.87), this project faced key limitations common in LNG macro forecasting:
-Very small dataset: Only ~38 monthly data points, which limits model generalization and increases risk of overfitting.
-Feature dimensionality: Even after selecting top features, adding lags and rolling metrics can inflate model complexity.
-Time series modeling constraints: TimeSeriesSplit was used to respect chronology, but data scarcity reduced cross-validation reliability.
+- Despite strong test-set performance (R² ~0.87), this project faced key limitations common in LNG macro forecasting:
+- Very small dataset: Only ~38 monthly data points, which limits model generalization and increases risk of overfitting.
+- Feature dimensionality: Even after selecting top features, adding lags and rolling metrics can inflate model complexity.
+- Time series modeling constraints: TimeSeriesSplit was used to respect chronology, but data scarcity reduced cross-validation reliability.
 
 ---
 
 ## 🎯 Takeaway
-This project demonstrates:
-A pragmatic trade-off between model complexity and physical LNG market structure.
-The importance of market-relevant feature engineering (e.g., gas flows, regional temperatures, price spreads).
-That test-set accuracy alone does not guarantee model robustness, especially in small, temporal datasets.
+- This project demonstrates:
+- A pragmatic trade-off between model complexity and physical LNG market structure.
+- The importance of market-relevant feature engineering (e.g., gas flows, regional temperatures, price spreads).
+- That test-set accuracy alone does not guarantee model robustness, especially in small, temporal datasets.
 
 ---
 
