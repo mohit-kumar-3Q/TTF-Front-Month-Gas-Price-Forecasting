@@ -60,7 +60,7 @@ This reflects a pragmatic trade-off between model robustness and physical market
 
 - Project focuses on **monthly prices**, not day-ahead or intraday spot forecasting.
 - Temperature data used as a **proxy for demand** in key EU countries.
-- Dataset constructed from multiple public sources; merged with consistent monthly frequency.
+- Dataset constructed from multiple public sources; merged with consistent monthly frequency. No internal data was used for this project.
 - All price data assumed in USD/MMBtu.
 
 ---
