@@ -8,14 +8,14 @@ This project builds a machine learning model to predict monthly **TTF gas prices
 
 - Forecast TTF natural gas prices using historical market data and energy fundamentals.
 - Understand how supply, demand, weather, and global price benchmarks affect TTF pricing.
-- Develop a machine learning model (XGBoost) for forecasting monthly prices.
+- Develop a machine learning model (RandomForest) for forecasting monthly prices.
 
 ---
 
 ## ✅ Quick Summary
 
 - **Data Period:** January 2020 – December 2024 (monthly)
-- **Model:** XGBoost Regressor
+- **Model:** RandomForest Regressor
 - **Target Variable:** TTF Price (USD/MMBtu)
 - **Key Drivers:** US LNG exports, HH/JKM prices, weather (temp), EU gas imports
 
@@ -42,8 +42,8 @@ This reflects a pragmatic trade-off between model robustness and physical market
 
 ## 📈 Model Highlights
 
-- Applied lag features, rolling averages, YoY changes, and spread variables.
-- Best performance with selected engineered features: **R² ~ 0.74**, **MAE ~ 1.8**, **RMSE ~ 2.4**
+- Applied lag features, rolling averages, and spread variables.
+- Best performance with selected engineered features: **R² ~ 0.87**, **MAE ~ 1.3**, **RMSE ~ 1.7**
 - Useful for exploratory pricing applications or trading signal prototypes.
 
 ---
@@ -62,6 +62,22 @@ This reflects a pragmatic trade-off between model robustness and physical market
 - Temperature data used as a **proxy for demand** in key EU countries.
 - Dataset constructed from multiple public sources; merged with consistent monthly frequency.
 - All price data assumed in USD/MMBtu.
+
+---
+
+## 📌 Final Verdict
+Despite strong test-set performance (R² ~0.87), this project faced key limitations common in LNG macro forecasting:
+Very small dataset: Only ~38 monthly data points, which limits model generalization and increases risk of overfitting.
+Feature dimensionality: Even after selecting top features, adding lags and rolling metrics can inflate model complexity.
+Time series modeling constraints: TimeSeriesSplit was used to respect chronology, but data scarcity reduced cross-validation reliability.
+
+---
+
+## 🎯 Takeaway
+This project demonstrates:
+A pragmatic trade-off between model complexity and physical LNG market structure.
+The importance of market-relevant feature engineering (e.g., gas flows, regional temperatures, price spreads).
+That test-set accuracy alone does not guarantee model robustness, especially in small, temporal datasets.
 
 ---
 
