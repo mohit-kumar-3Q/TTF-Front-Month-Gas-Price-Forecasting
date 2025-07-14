@@ -74,7 +74,7 @@ This reflects a pragmatic trade-off between model robustness and physical market
 ---
 
 ## 🎯 Takeaway
-- This project demonstrates:
+This project demonstrates:
 - A pragmatic trade-off between model complexity and physical LNG market structure.
 - The importance of market-relevant feature engineering (e.g., gas flows, regional temperatures, price spreads).
 - That test-set accuracy alone does not guarantee model robustness, especially in small, temporal datasets.
