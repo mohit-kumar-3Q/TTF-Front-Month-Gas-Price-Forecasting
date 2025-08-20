@@ -52,7 +52,7 @@ This reflects a pragmatic trade-off between model robustness and physical market
 
 - Can be extended into gas portfolio optimization or LNG arbitrage modeling.
 - Helpful as an interview showcase for roles in LNG analytics, pricing, or trading.
-- Highlights understanding of **EU energy pricing**, **supply/demand fundamentals**, and **quant modeling**.
+- Highlights understanding of **EU gas pricing**, **supply/demand fundamentals**.
 
 ---
 
