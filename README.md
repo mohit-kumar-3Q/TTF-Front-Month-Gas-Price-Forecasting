@@ -91,5 +91,5 @@ View full notebook on **nbviewer**:
 ## 👤 Author
 
 **Mohit Kumar**  
-LNG Analyst | Energy Market Research | Quantitative Modeling  
+LNG Data Analyst 
 Email: mohitkr.h@gmail.com
