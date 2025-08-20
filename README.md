@@ -15,9 +15,9 @@ This project builds a machine learning model to predict monthly **TTF gas prices
 ## ✅ Quick Summary
 
 - **Data Period:** January 2020 – December 2024 (monthly)
-- **Model:** RandomForest Regressor
+- **Model:** RandomForest Regressor and XGBoost Regressor
 - **Target Variable:** TTF Price (USD/MMBtu)
-- **Key Drivers:** US LNG exports, HH/JKM prices, weather (temp), EU gas imports
+- **Key Drivers:** HH/JKM prices, weather (temp), EU gas imports
 
 ---
 
